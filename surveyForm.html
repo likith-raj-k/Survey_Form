@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="surveyForm.css">
+</head>
+<body>
+    <div class="container">
+        <h1> Customer Survey Form</h1>
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="First-Name">
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="Last-Name">
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="DOB">
+            </div>
+            <div class="form-group">
+                <label for="country">Country:</label>
+                <select id="country" name="Country">
+                    <option value="" disabled selected>Select your country</option>
+                    <option value="India">INDIA</option>
+                    <option value="Canada">CANADA</option>
+                    <option value="China">CHINA</option>
+                    <option value="Germany">GERMANY</option>
+                    <option value="Usa">USA</option>
+                    <option value="England">ENGLAND</option>
+                    <option value="Italy">ITALY</option>
+                    <option value="Japan">JAPAN</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Gender:</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="male" name="Gender" value="Male">
+                    <label for="male">Male</label>
+                    <input type="checkbox" id="female" name="Gender" value="Female">
+                    <label for="female">Female</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="profession">Profession:</label>
+                <input type="text" id="profession" name="Profession">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="Email">
+            </div>
+            <div class="form-group">
+                <label for="mobile">Mobile Number:</label>
+                <input type="tel" id="mobile" name="Mobile">
+            </div><br>
+            <div class="form-buttons">
+                <button type="button" id="reset-button">Reset</button>
+                <button type="button" id="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close" id="close-popup">&times;</span>
+            <h2>Survey Form Submission</h2>
+            <div id="popup-results"></div>
+        </div>
+    </div>
+    <script src="surveyForm.js"></script>
+    <div class="copyright">
+        <p>© 2018 Customer Survey Form.All Rights Reserved | Design by <a href>W3Layouts</a></p>
+    </div>
+</body>
+</html>
